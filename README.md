@@ -2,4 +2,4 @@
 
 
 ## Colaborators
-Pratik Gupta : [Pratik Gupta](github.com/prat1k-gupta)
+[Pratik Gupta](github.com/prat1k-gupta)
