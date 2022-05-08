@@ -1,0 +1,119 @@
+body{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.main{
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo{
+    height: 40px;
+    margin-right: auto;
+}
+
+.nav-list{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link:hover{
+    background: #7848B6;
+    color: white; 
+    /* padding: 10px;  */
+    /* border-radius: 0 50%; */
+    border-radius: 90px;
+}
+
+/* hero section */
+
+.heroSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.heroImg{
+    max-width: 100%;
+}
+
+.input{
+    /* width: 80%; */
+    width: 70%;
+    border-radius: 50px;
+    min-height: 30px;
+    text-indent: 10px;
+    font-family: 'Inter',sans-serif;
+}
+
+/* card */
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+.cards-list::-webkit-scrollbar {
+    height: 6px;
+    border: 1px solid #d2d2d7;
+    border-radius: 6px;
+  }
+  .cards-list::-webkit-scrollbar-thumb {
+    height: 6px;
+    background-color: #d2d2d7;
+    border-radius: 6px;
+  }
+  
+  .cards-list::-webkit-scrollbar-thumb:hover {
+    background-color: #b6b6b6;
+  }
+  
+  .cards-list::-webkit-scrollbar:vertical {
+    display: none;
+  }
+.card{
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+    width: 200px;
+    border-radius: 10px ;
+}
+
+
+
+.cardImg{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* volunteer */
+
+.form-container{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 70vw;
+}
+
+.btn-color{
+    background-color: #7848B6;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+}
