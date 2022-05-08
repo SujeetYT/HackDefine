@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+const path = require('path')
 const cors = require("cors")
 const port = process.env.PORT || 3001;
 const Volunteer = require('./models/Volunteer');
@@ -32,6 +33,17 @@ app.post("/volunteer", async (req, res)=>{
     res.redirect("http://localhost:3000/")
     
 })
+
+// ------------------ Deployment-------------------
+if(process.env.NODE_ENV === "production"){
+    console.log(path.join(__dirname, "frontend","save-food-app", "build", "index.html"))
+    app.use(express.static(path.join(__dirname, "frontend","save-food-app", "build")))
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, "frontend","save-food-app", "build", "index.html"))
+    })
+}
+
 app.listen(port, ()=>{
     console.log(`server running on port : ${port}`);
 })
