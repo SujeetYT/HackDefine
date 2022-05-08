@@ -4,8 +4,7 @@ const volunteerschema = new mongoose.Schema({
     Name : String,
     FoodType : String,
     Quantity : Number,
-    Phone : String,
-    Time : {type : Date},
+    Time : String,
     Address : String,
     Note : String
 });
