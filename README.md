@@ -12,6 +12,7 @@ Open two terminals. one for Front end and other for backend
 run the following commands
 
 ----------------------------For front end----------------
+
 Move to the frontend direcory
 
 ## `cd frontend/save-food-app`
@@ -26,6 +27,7 @@ then run the server
 
 
 ----------------------------For backend-----------------
+
 Move to the backend direcory
 
 ## `cd Backend`
