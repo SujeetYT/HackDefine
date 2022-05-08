@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-dependencies" : "cd frontend/save-food-app && npm install",
-    "build" : "cd frontend/save-food-app && npm run build",
+    "install-dependencies" : "cd ../frontend/save-food-app && npm install",
+    "build" : "cd ../frontend/save-food-app && npm run build",
     "heroku-postbuild" : "npm run install-dependencies && npm run build",
     "start": "node index.js"
   },
